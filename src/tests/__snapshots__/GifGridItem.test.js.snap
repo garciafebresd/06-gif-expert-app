@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the component GifGridItem should show GifGridItem 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="saitama gif"
+    src="https://media3.giphy.com/media/yo3TC0yeHd53G/giphy.gif?cid=302e87eafbovpk4miuyk21s037mx5yqxvbuch3ejtcvi7gx9&amp;rid=giphy.gif&amp;ct=g"
+  />
+  <p>
+    saitama gif
+  </p>
+</div>
+`;
