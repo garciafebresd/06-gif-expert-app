@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme';
-import { GifGridItem } from '../components/GifGridItem';
+import { GifGridItem } from '../../components/GifGridItem';
 
 describe('Testing the component GifGridItem', () => {
 
@@ -17,21 +17,15 @@ describe('Testing the component GifGridItem', () => {
     }
 
     test('should show GifGridItem', () => {
-
         expect(wrapper).toMatchSnapshot();
-
     });
 
     test('should show title in p tag', () => {
-
         const p = wrapper.find('p');
         expect(p.text().trim()).toBe(title);
-
     });
 
-
     test('the image should has url and alt properties', () => {
-
         const img = wrapper.find('img').props();
         expect(img.alt).toBe(title);
         expect(img.src).toBe(url);
@@ -39,14 +33,11 @@ describe('Testing the component GifGridItem', () => {
         // expect(img.prop('alt')).toBe(title);
         // expect(img.prop('src')).toBe(url);
     });
-    
 
     test('should have classname animate__fadeIn', () => {
-
         const div = wrapper.find('div');
         const className = div.prop('className');
         expect(className.includes('animate__fadeIn')).toBe(true);
-
     });
     
 });
